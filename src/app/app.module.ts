@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ColorChromeModule } from 'ngx-color/chrome';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GeneratorComponent } from './generator/generator.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { GeneratorComponent } from './generator/generator.component';
     GeneratorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ColorChromeModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
